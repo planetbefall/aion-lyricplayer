@@ -1,4 +1,4 @@
- export var songs = [
+var songs = [
   { 
    name: "Aion Teleos",
     track: "https://raw.githubusercontent.com/planetbefall/aion-lyricplayer/main/music/Endless%20War.mp3",
@@ -92,3 +92,5 @@
     main: "3"
   }
 ]
+
+export{songs/*, OtherThingsYouWannaExport*/}
