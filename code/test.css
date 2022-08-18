@@ -1,0 +1,196 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+body{background:#bcbcbc;}
+h1{text-align:center; font-family:Oswald;}
+
+#playlist{
+  position: relative;
+  overflow: hidden;
+  width: 500px;
+  min-height:300px;
+  margin: 20px auto;
+  background: #484A54 url(https://ununsplash.imgix.net/photo-1428976343495-f2c66e701b2b) center center no-repeat;
+  background-size: 100% auto;
+}
+
+#playlist .music{
+  width:500px;
+  height: 80px;
+  background: rgba(0,0,0,0.6);
+  overflow: hidden;
+  position: relative!important;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  
+  -webkit-transition: all 0.2s linear;
+-moz-transition: all 0.2s linear;
+-ms-transition: all 0.2s linear;
+-o-transition: all 0.2s linear;
+transition: all 0.2s linear;
+}
+
+#playlist .music:hover{
+  background: rgba(0,0,0,0.8);
+}
+
+#playlist .music .button{
+  width:50px;
+  height:50px;
+  background: url(http://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Simple_Music.svg/2000px-Simple_Music.svg.png)no-repeat center center;
+  background-size:70%;
+  border-radius: 100%;
+  border:solid 1px teal;
+  position: absolute;
+  overflow:hidden;
+  top:15px;
+  left:150px;
+  
+    -webkit-transition: all 0.3s linear;
+-moz-transition: all 0.3s linear;
+-ms-transition: all 0.3s linear;
+-o-transition: all 0.3s linear;
+transition: all 0.3s linear;
+}
+
+#playlist .music:hover .button{
+  width:30px;
+  height:30px;
+  top:45px;
+  left: 90px;
+}
+
+#playlist .music .button object{
+    -webkit-transition: all 0.3s linear;
+-moz-transition: all 0.3s linear;
+-ms-transition: all 0.3s linear;
+-o-transition: all 0.3s linear;
+transition: all 0.3s linear;}
+
+#playlist .music:hover .button object{
+margin-top:-10px;margin-left:-10px;}
+
+#playlist .music .playbg {
+  width:60px;
+  height:60px;
+  border-radius: 100%;
+  position: absolute;
+  overflow:hidden;
+  top:10px;
+  left:145px;
+}
+
+#playlist .music:hover .playbg { 
+  width:40px;
+  height:40px;
+  background: red;
+  border-radius:100%;
+  background:rgba(4,167,119,0.3);
+  position: absolute;
+  top:40px;
+  left: 85px;
+  
+ -webkit-transition: all 0.3s linear;
+-moz-transition: all 0.3s linear;
+-ms-transition: all 0.3s linear;
+-o-transition: all 0.3s linear;
+transition: all 0.3s linear;
+  
+    -webkit-animation-duration: 3s; 
+    animation-duration: 3s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: linear; 
+    animation-timing-function: linear; 
+    animation-iteration-count:infinite; 
+    -webkit-animation-iteration-count:infinite; 
+} 
+
+@-webkit-keyframes bounceIn { 10% {  opacity: 1; -webkit-transform: scale(0.9);} 50% { opacity: 1; -webkit-transform: scale(1.05); } 70% { -webkit-transform: scale(.9);} 100% {   -webkit-transform: scale(1);  } } @keyframes bounceIn { 10% { opacity: 1; transform: scale(0.9);  } 50% { opacity: 1; transform: scale(1.05); } 70% { transform: scale(.9); } 100% { transform: scale(1);}} .bounceIn { -webkit-animation-name: bounceIn; animation-name: bounceIn; }
+
+#playlist .music .image{
+  top:-5px;
+  left:20px;
+  opacity: 0.8;
+  width:90px;
+  height:90px;
+  border-radius: 100%;
+  position: absolute;
+  overflow: hidden !important;
+  opacity:0;
+  
+-webkit-box-shadow: 0 0 0 15px rgba(255,255,255,0.1);
+box-shadow: 0 0 0 15px rgba(255,255,255,0.1);
+  
+  
+  -webkit-transition: all 0.3s linear;
+-moz-transition: all 0.3s linear;
+-ms-transition: all 0.3s linear;
+-o-transition: all 0.3s linear;
+transition: all 0.3s linear;
+}
+
+#playlist .music:hover .image{
+  opacity: 0.8;
+}
+
+#playlist .music .player{
+  width: 100px;
+  height: 10px;
+  padding:35px 40px;
+  position: absolute;
+  left: 180px;
+  color: #fff;
+  text-align:center;
+  font-family: 'Roboto', sans-serif;
+  font-size:10px;
+  
+  -webkit-transition: all 0.5s linear;
+-moz-transition: all 0.5s linear;
+-ms-transition: all 0.5s linear;
+-o-transition: all 0.5s linear;
+transition: all 0.5s linear;
+}
+
+#playlist .music .player marquee{
+  height: 10px;
+  line-height: 10px;
+}
+
+#playlist .music:hover .player{
+  left: 110px;
+}
+
+
+#playlist .music .info{
+  width: 210px;
+  height: 60px;
+  padding:10px;
+  position: absolute;
+  right: -100px;
+  opacity:0;
+  color: #fff;
+  font-family: 'Lora', serif;
+  font-style:italic;
+  font-size:10px;
+  text-align:right;
+  font-weight: 100;
+  line-height: 12px;
+  
+  -webkit-transition: all 0.5s linear;
+-moz-transition: all 0.5s linear;
+-ms-transition: all 0.5s linear;
+-o-transition: all 0.5s linear;
+transition: all 0.5s linear;
+}
+
+#playlist .music:hover .info{
+  right: 0px;
+  opacity:1;
+}
+
+.info ul{list-style:none; margin-top:2px;}
+.info ul li a{color:#fff;}
+
+@media (max-width:520px){
+  #playlist{width:90%; margin:0 auto;}
+  .info{right: 0px; margin-right:165px; }
+  marquee{display:none;}
+}
