@@ -93,4 +93,4 @@ var songs = [
   }
 ]
 
-export{songs/*, OtherThingsYouWannaExport*/}
+export default songs;
